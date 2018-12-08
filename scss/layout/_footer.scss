@@ -1,0 +1,104 @@
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer {
+    padding: 0;
+    background-color: #0b1c38;
+    text-align: left;
+    width: 100%;
+    min-width: $min-width;
+    margin-top: auto;
+    color: #ffffff;
+
+    
+}
+
+.footer {
+    height: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .social-and-date {
+        .social {
+            margin-bottom: 20px;
+            i {
+                color: #ffffff;
+                transition: .5s;
+                &:hover {
+                    color: #ee602a;
+                }
+            }
+        }
+        span {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.28px;
+        }
+    }
+    .footer_nav {
+        display: flex;
+        ul {
+        
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+            li {
+               
+                a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 34px;
+                    letter-spacing: 0.32px;
+                     margin-bottom: 20px;
+                     margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .phone-and-time {
+        a {
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {}
+
+
+@media screen and (max-width: 800px) {
+    .footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0;
+        text-align: center;
+        .logo {
+            order: 4;
+        }
+        .social-and-date {
+           order: 3;
+        }
+        .footer_nav {
+            order: 1;
+        }
+        .phone-and-time {
+            order: 2;
+
+        }
+         .social-and-date, .footer_nav, .phone-and-time {
+            margin-bottom: 10px;
+         }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}

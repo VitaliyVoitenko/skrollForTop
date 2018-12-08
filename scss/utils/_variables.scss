@@ -1,0 +1,32 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 1170px; 
+$base-bg: #fff; 
+$base-font-size: 16px; 
+$base-line-height: 22px; 
+$base-font-family: 'Roboto', sans-serif; 
+$custom-font-family: 'Roboto', sans-serif; 
+$link-color: #fff;
+$default-transition:all 0.2s linear;
+
+/* main variables */
+
+//text, titles
+$text-color: #000;
+$title-color: #000;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 50px;
+$line-height-h1: 50px;
+
+$font-size-h2: 42px;
+$line-height-h2: 42px;
+
+$font-size-h3: 26px;
+$line-height-h3: 26px;
+
+$font-size-h4: 22px;
+$line-height-h4: 22px;
+
+$font-size-h5: 18px;
+$line-height-h5: 18px;

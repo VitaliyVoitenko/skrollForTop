@@ -1,0 +1,67 @@
+/*
+/////////////////////////////////////////////////////////
+///                                                   ///
+///     Author: Voytenko Vitaly Olegovich             ///
+///     Contacts                                      ///
+///     phone: +380638077812                          ///
+///     mail : hot1ce1odessa@gmail.com                ///
+///     skype: hot1ce1                                ///
+///                                                   ///
+/////////////////////////////////////////////////////////
+*/
+/* reset */
+/* main variables */
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-width: 0px; padding: 0px; margin: 0px; }
+
+html { height: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+input, textarea { color: #333; font-family: "Roboto", sans-serif; outline: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; }
+
+input[type="button"], input[type="submit"], button { cursor: pointer; }
+
+td { margin: 0px; padding: 0px; }
+
+form { padding: 0px; margin: 0px; }
+
+a { color: #fff; -webkit-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; text-decoration: none; outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a, span, div, button { outline: none !important; }
+
+input[type=submit], input[type=button], button { -webkit-appearance: none; outline: none; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after, .wrapper:after, .row:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+body { height: 6000px; background-color: #22314b; }
+
+/* The progress container (grey background) */
+.progress-container-1 { position: fixed; top: 0; z-index: 1; width: 100%; height: 30px; }
+
+.progress-container-1 .progress-bar { height: 8px; background: #4caf50; width: 0; }
+
+.progress-container-2 { position: fixed; top: 0; right: 0; z-index: 65555; width: 50px; height: 100%; }
+
+.progress-container-2 .progress-bar { background: #4caf50; height: 0; }
+
+/* The progress bar (scroll indicator) */
+.circle { position: fixed; top: 50%; left: 0; right: 0; margin: auto; width: 50px; z-index: 666; stroke: #f11834; stroke-dasharray: 201; stroke-dashoffset: 201; -webkit-transition: stroke-dashoffset .3s; -o-transition: stroke-dashoffset .3s; transition: stroke-dashoffset .3s; }
+
+/*# sourceMappingURL=style.css.map */
