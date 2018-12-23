@@ -1,25 +1,32 @@
 
 
 // skroll bar
-window.onscroll = function() {varfu()};
+window.onscroll = function() {varfu(), klass()};
 let varfu = function myFunction() {
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var scrolled = (winScroll / height) * 200;
-  forHeigt(scrolled);
-  forWidht(scrolled);
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let scrolled = (winScroll / height) * 200;
   document.getElementById("myBar").style.strokeDashoffset = scrolled + "";
-  function forHeigt(scrolled) {
-    scrolledD = scrolled / 2;
-    document.getElementById("forH").style.height = scrolledD + "%";
-  }
-  function forWidht() {
-    forHeigt(scrolled);
-    scrolledD = scrolled / 2;
-    document.getElementById("forW").style.width = scrolledD + "%";
-  }
-  
+
+
 }
+let klass = function () {
+  if(window.pageYOffset>500){
+    document.getElementById('top').style.right="5%";
+  }
+  else{
+     document.getElementById('top').style.right="-50%";
+  }
+ }
+ $('#top').click(function () {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 400);
+    return false;
+});
+
+
+
 
 
 

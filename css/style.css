@@ -62,6 +62,36 @@ body { height: 6000px; background-color: #22314b; }
 .progress-container-2 .progress-bar { background: #4caf50; height: 0; }
 
 /* The progress bar (scroll indicator) */
-.circle { position: fixed; top: 50%; left: 0; right: 0; margin: auto; width: 50px; z-index: 666; stroke: #f11834; stroke-dasharray: 201; stroke-dashoffset: 201; -webkit-transition: stroke-dashoffset .3s; -o-transition: stroke-dashoffset .3s; transition: stroke-dashoffset .3s; }
+.circle { position: fixed; top: 80%; right: -50%; margin: auto; width: 68px; z-index: 666; stroke: #f11834; stroke-dasharray: 201; stroke-dashoffset: 201; -webkit-transition: stroke-dashoffset .3s; -o-transition: stroke-dashoffset .3s; transition: stroke-dashoffset .3s; -webkit-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; cursor: pointer; }
+
+.arrows { position: relative; margin: auto; position: absolute; top: 57%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 30px; height: 35px; }
+
+.arrows .arow { position: absolute; opacity: 0; -webkit-animation: arrow-animate 1.9s  infinite ease; animation: arrow-animate 1.9s  infinite ease; }
+
+.arrows .arow:before, .arrows .arow:after { content: ''; position: absolute; width: 16px; margin: auto; border-bottom: 2px solid #4caf50; height: 1px; top: 5px; -webkit-transform: rotate(-30deg); -ms-transform: rotate(-30deg); transform: rotate(-30deg); }
+
+.arrows .arow:after { -webkit-transform: rotate(30deg); -ms-transform: rotate(30deg); transform: rotate(30deg); right: -30px; }
+
+.arrows .arow:nth-child(1) { top: 24px; -webkit-animation-delay: .25s; animation-delay: .25s; }
+
+.arrows .arow:nth-child(2) { top: 16px; -webkit-animation-delay: .5s; animation-delay: .5s; }
+
+.arrows .arow:nth-child(3) { top: 8px; -webkit-animation-delay: .75s; animation-delay: .75s; }
+
+.arrows .arow:nth-child(4) { top: 0; -webkit-animation-delay: 1s; animation-delay: 1s; }
+
+.arrows .arow:nth-child(5) { top: -8px; -webkit-animation-delay: 1.25s; animation-delay: 1.25s; }
+
+.arrows .arow:nth-child(6) { top: -16px; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+
+@-webkit-keyframes arrow-animate { 0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 0; } }
+
+@keyframes arrow-animate { 0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 0; }
+  100% { opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */
